@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3ce8572aacf545e7ab52b46246018a97" Name="Diagram1">
+        <EntityTypeShape EntityType="GgDBModel.Category" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GgDBModel.District" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GgDBModel.Product" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GgDBModel.Role" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GgDBModel.Supplier" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GgDBModel.User" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="GgDBModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="GgDBModel.FK_Suppliers_District" ManuallyRouted="false" />
+        <AssociationConnector Association="GgDBModel.FK_Product_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="GgDBModel.FK_User_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="GgDBModel.FK_Suppliers_User" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="GgDBModel.sysdiagrams" Width="1.5" PointX="7.375" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

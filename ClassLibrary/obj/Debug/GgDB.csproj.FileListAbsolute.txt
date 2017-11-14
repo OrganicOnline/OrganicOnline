@@ -1,0 +1,16 @@
+C:\Users\Akeli\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\GgDB.dll.config
+C:\Users\Akeli\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\GgDB.dll
+C:\Users\Akeli\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\GgDB.pdb
+C:\Users\Akeli\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\Users\Akeli\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\Users\Akeli\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\obj\Debug\GgDB.dll
+C:\Users\Akeli\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\obj\Debug\GgDB.pdb
+C:\Users\Akeli\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\obj\Debug\GgDB.csprojResolveAssemblyReference.cache
+D:\Akeli Eski PC\asdasd\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\GgDB.dll.config
+D:\Akeli Eski PC\asdasd\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\GgDB.dll
+D:\Akeli Eski PC\asdasd\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\GgDB.pdb
+D:\Akeli Eski PC\asdasd\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\EntityFramework.dll
+D:\Akeli Eski PC\asdasd\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\bin\Debug\EntityFramework.xml
+D:\Akeli Eski PC\asdasd\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\obj\Debug\GgDB.csprojResolveAssemblyReference.cache
+D:\Akeli Eski PC\asdasd\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\obj\Debug\GgDB.dll
+D:\Akeli Eski PC\asdasd\Documents\Visual Studio 2013\Projects\Gg\ClassLibrary1\obj\Debug\GgDB.pdb
