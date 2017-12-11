@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GgDB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -33,13 +34,7 @@ public partial class Kayit : BasePage
         txtTelefon.Text = "";
         fuFoto.TabIndex = 0;
     }
-        //foreach (Control item in this.Controls)
-        //{
-        //    if (item is TextBox)
-        //    {
-        //        ((TextBox)item).Text = String.Empty;
-        //    }
-        //}
+
     private void GetDistricts()
     {
         ddlIlce.DataSource = GgDbProvider.GetDistrictList();
@@ -49,7 +44,20 @@ public partial class Kayit : BasePage
     }
     protected void lbLogin_Click(object sender, EventArgs e)
     {
-        Response.Write("hi");
+        string usr = txtLoginUsername.Text;
+        string pswd = txtLoginPasswd.Text;
+        User result = GgDbProvider.GetUserByUsernameAndPassword(usr, pswd);
+        if (result != default(User))
+        {
+            Session["Oturum"] = result;
+            Response.Redirect("Urunlerr.aspx");
+        }
+        else
+        {
+            panelDanger.Visible = true;
+            Session["Oturum"] = null;
+
+        }
     }
 
     protected void btnGonder_Click(object sender, EventArgs e)

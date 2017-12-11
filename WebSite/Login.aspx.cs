@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GgDB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,14 +11,34 @@ public partial class Login : BasePage
     //static int sayi = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
-       // GgDbProvider.GetUserList();
-       
+
 
     }
-    //protected void btnTikla_Click(object sender, EventArgs e)
-    //{
-    //    sayi++;
-    //    lblDeneme.Text = sayi.ToString();
 
-    //}
+
+    protected void btnLogin_Click(object sender, EventArgs e)
+    {
+        string usr = txtKullaniciAdi.Text;
+        string pswd = txtPswd.Text;
+        User result = GgDbProvider.GetUserByUsernameAndPassword(usr, pswd);
+        if (result != default(User))
+        {
+            Session["Oturum"] = result;
+            if (Session["URL"] as string == "siparis")
+                Response.Redirect("UrunSiparis.aspx");
+            else if (Session["URL"] as string == "siparislerim")
+                Response.Redirect("Siparislerim.aspx");
+            else if(Session["URL"] as string == "gelensiparis")
+                Response.Redirect("GelenSiparis.aspx");
+            else
+                Response.Redirect("Urunlerr.aspx");
+
+        }
+        else
+        {
+            panelDanger.Visible = true;
+            Session["Oturum"] = null;
+
+        }
+    }
 }
