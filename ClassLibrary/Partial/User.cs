@@ -31,6 +31,10 @@ namespace GgDB
             SaveChanges();
             return usr.ObjectID;
         }
+        public User GetUserByUsernameAndPassword(string username, string password)
+        {
+           return User.FirstOrDefault(i => i.Username == username && i.Password == password && i.Deleted == false);
+        }
 
     }
 
