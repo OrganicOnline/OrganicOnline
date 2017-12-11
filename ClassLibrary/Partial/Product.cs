@@ -50,5 +50,16 @@ namespace GgDB
             AddToProduct(p);
         }
 
+        public void upStock(int id, int amount)
+        {
+            Product.Where(s => s.ObjectID == id).First().Quantity += amount;
+            SaveChanges();
+        }
+
+        public void downStock(int id, int amount)
+        {
+            Product.Where(s => s.ObjectID == id).First().Quantity -= amount;
+            SaveChanges();
+        }
     }
 }
