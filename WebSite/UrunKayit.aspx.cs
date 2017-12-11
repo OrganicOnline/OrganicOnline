@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using GgDB;
+using System.IO;
 
 public partial class _Default : BasePage
 {
@@ -106,6 +107,7 @@ public partial class _Default : BasePage
                 if (upload.ContentType.Contains("image") && upload.ContentLength < 1000000000)
                 {
                     Guid ID = Guid.NewGuid();
+                    File.Copy(upload.FileName, Path.Combine(@"urunResimler\", Path.GetFileName(upload.FileName)));
                     resimYolu = Server.MapPath(string.Format("urunResimler{0}.jpg", ID));
                 }
                 else
@@ -160,7 +162,7 @@ public partial class _Default : BasePage
                 GgDbProvider.AddProduct(manavID, item);
             }
             // GgDbProvider.SaveChanges();
-            urunKayit.Visible = false;
+            urunKayit.Visible = true;
             //paragrafBilgi.InnerText = "Ürünleriniz başarıyla kaydedilmiştir.";
             Session.Remove("liste");
         }
